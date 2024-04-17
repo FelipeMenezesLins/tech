@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <span onclick = clickmenu() class="material-icons">menu</span>
+        </div>
+            <div id="lgl">
+                <menu id="itens">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Certificados</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Conta</a></li>
+                    </ul>
+                </menu>
+            </div>
+            <h1>Tech</h1>
+            <div  id="est"><img src="imagens/estudante4.png" alt="estudante"></div>
+    </header>
+        <main>
+            <section>
+                <a href="#">Começar</a>
+            </section>
+            <article>
+
+                <h1>Bem-vindo!</h1>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo tempore quis non vel architecto eveniet cum esse tenetur doloremque culpa sit consequatur, repudiandae exercitationem soluta? Voluptatibus non error temporibus!</p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quos, molestiae, qui dolorum, iste nemo incidunt eum at ipsa culpa illo labore nobis blanditiis nam laudantium impedit eius mollitia reiciendis!</p>
+                
+            </article>
+        </main>
+    <script>
+            function clickmenu() {
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
