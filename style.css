@@ -12,6 +12,7 @@
 
 body {
     height:100vh;
+    background-color: beige;
 }
 
 header {
@@ -22,6 +23,8 @@ header {
     background-attachment: fixed;
     display: flex;
     justify-content: space-between;
+    height:300px;
+    box-shadow: 0px 5px 9px rgb(199, 199, 169);
 }
 
 
@@ -71,12 +74,17 @@ ul > li > a:hover {
 }
 
 main {
-    background-image: url(./imagens/fundo2.jpg);
+    background:url(./imagens/mic.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    height:500px;
-    padding:10px;
+    background-size: cover;
+    height:80vh;
+    padding:20px;
+    max-width:800px;
+    margin:auto;
+    box-shadow: 1px 1px 4px rgb(199, 199, 169);
+    margin-top:20px;
 }
 
 section {
@@ -89,15 +97,22 @@ section {
 article {
     float:right;
     width:70%;
-    background-color: rgba(0, 0, 0, 0.096);
-    border:11px;
+    background-color: rgba(243, 238, 238, 0.068);
+    border-radius:11px;
 }
 
 article > h1 {
-    color:white;
+    color:blue;
     font-family:'lugarismo', cursive, sans-serif;
     text-align:center;
-    font-size:1.5em;
+    font-size:2em;
+}
+
+article h2 {
+    color:white;
+    font-family:'lugarismo', cursive, sans-serif;
+    text-align:justify;
+    padding:10px;
 }
 
 article > p {
@@ -105,6 +120,13 @@ article > p {
     font-size: 1.2em;
     font-family: 'lugarismo', cursive, sans-serif;
     padding:10px;
+}
+
+mark {
+    color:white;
+    background-color: blue;
+    padding:5px;
+    border-radius:5px;
 }
 
  main a {
@@ -127,3 +149,42 @@ main a:hover {
     color:blue;
     background-color: white;
 }
+
+footer {
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+footer h1 {
+    color:white;
+    font-family: 'lugarismo', cursive, sans-serif;
+    text-align:center;
+    font-size:1.5em;
+}
+
+footer > section {
+    background:black;
+    width:100%;
+}
+
+footer > section > ul {
+    list-style-type:none;
+    display:flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom, black, black);
+}
+
+footer img {
+    width:80px;
+    border-radius:50%;
+    border: 2px solid white;
+}
+
+footer img:hover {
+    border:3px solid rgb(93, 109, 252);
+    transition: transform, .4s, border, .3s;
+    transform: translate(-3px, -5px)
+}
+
+
