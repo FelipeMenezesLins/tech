@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="medias.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <div>
-            <span onclick = clickmenu() class="material-icons">menu</span>
+            <span id="burguer" onclick = "clickmenu() "class="material-icons">menu</span>
         </div>
             <div id="lgl">
                 <menu id="itens">
@@ -55,6 +56,15 @@
             } else {
                 itens.style.display = 'block'
             }
+        }
+        function mudouTamanho(){
+            function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'inline-block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
         }
     </script>
 </body>
